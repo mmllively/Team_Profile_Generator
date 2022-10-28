@@ -3,9 +3,11 @@ const html = [];
     // create the manager html
     const generateManager = manager => {
        let managerHtml = `
+       <div class="row">
+  <div class="col-sm-6">
        <div class="card" style="width: 18rem;">
        <div class="card-body">
-         <h5 class="card-title">${manager.name}</h5>
+         <h5 class="card-title bg-primary text-center">${manager.name}</h5>
          <ul class="list-group list-group-flush">
          <li>${manager.id}</li>
          <li>${manager.email}</li>
@@ -13,6 +15,8 @@ const html = [];
          </ul>
        </div>
      </div>
+  </div>
+  </div>
      `;
      html.push(managerHtml);
     };
@@ -20,9 +24,11 @@ const html = [];
     // create the html for engineers
     const generateEngineer = engineer => {
         let engineerHtml = `
+        <div class="row">
+        <div class="col-sm-6">
         <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">${engineer.name}</h5>
+          <h5 class="card-title bg-primary text-center">${engineer.name}</h5>
           <ul class="list-group list-group-flush">
           <li>${engineer.id}</li>
           <li>${engineer.email}</li>
@@ -30,6 +36,8 @@ const html = [];
           </ul>
         </div>
       </div>
+      </div>
+  </div>
       `;
       html.push(engineerHtml);
     };
@@ -37,9 +45,11 @@ const html = [];
     // create the html for interns
     const generateIntern = intern => {
         let internHtml = `
+        <div class="row">
+        <div class="col-sm-6">
         <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">${intern.name}</h5>
+          <h5 class="card-title bg-primary text-center">${intern.name}</h5>
           <ul class="list-group list-group-flush">
           <li>${intern.id}</li>
           <li>${intern.email}</li>
@@ -47,6 +57,9 @@ const html = [];
           </ul>
         </div>
       </div>
+      </div>
+  </div>
+ 
       `;
       html.push(internHtml);
     };
@@ -77,13 +90,18 @@ module.exports = team => {
        <meta charset="UTF-8">
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
        <title>Document</title>
    </head>
+   <div class="jumbotron jumbotron-fluid bg-success">
+   <div class="container">
+     <h1 class="display-4">Team Profile</h1>
+   </div>
+ </div>
    <body>
-  
+   <div class= "container">
    ${generateTeam(team)}
+   </div>
    </body>
    </html>`
 }
-
-// add cards above
