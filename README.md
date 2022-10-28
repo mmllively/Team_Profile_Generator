@@ -17,13 +17,13 @@ https://mmllively.github.io/Team_Profile_Generator/
 
 
 ## Installation
-Node.js & Inquirer 8.2.4
+Node.js & Inquirer 8.2.4 & Jest
 
 ## Contributions
 UCF TA's and fellow classmates.
 
 ## Questions - Link to Instructional Video
-
+https://app.castify.com/view/46f0c6be-73ef-46b9-a3f7-a37060870c20
 
 
 
