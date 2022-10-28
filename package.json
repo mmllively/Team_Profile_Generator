@@ -1,0 +1,25 @@
+{
+  "name": "team_profile_generator",
+  "version": "1.0.0",
+  "description": "This homework project requires building a Node.js command-line application that takes in information about employees team and generates results on an HTML page.",
+  "main": "index.js",
+  "scripts": { 
+    "start": "node index",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmllively/Team_Profile_Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmllively/Team_Profile_Generator/issues"
+  },
+  "homepage": "https://github.com/mmllively/Team_Profile_Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.2.2"
+  }
+}
