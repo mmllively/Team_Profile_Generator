@@ -19,7 +19,6 @@ const html = [];
 
     // create the html for engineers
     const generateEngineer = engineer => {
-         
         let engineerHtml = `
         <div class="card" style="width: 18rem;">
         <div class="card-body">
@@ -53,11 +52,21 @@ const html = [];
     };
 
     // use the team array to generate pieces of html based on the employee role
-//   for (let i = 0; i < team.length; i++) {
-//   console.log(team[i]);
-    
-//   }
-console.log(team);
+  for (let i = 0; i < team.length; i++) {
+  console.log(team[i].getRole());
+  const role = team[i].getRole();
+
+  if (role==="Manager") {
+    generateManager(team[i]);
+  } else if(role==="Engineer") {
+    generateEngineer(team[i]);
+  }else {
+    generateIntern(team[i]);
+  }
+    //if statement to run corresponding function 
+  }
+  return html;
+// console.log("this is html", html);
 }
 
 module.exports = team => {
@@ -71,7 +80,10 @@ module.exports = team => {
        <title>Document</title>
    </head>
    <body>
-       
+  
+   ${generateTeam(team)}
    </body>
    </html>`
 }
+
+// add cards above

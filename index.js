@@ -169,8 +169,9 @@ function internQuestions() {
 // Afterwards generate the HTML file
 
 function completeMenu() {
-  console.log(teamMembers);
+  // console.log(teamMembers);
   fs.writeFileSync(distPath, render(teamMembers), "utf-8");
+  console.log("file written in html")
 }
 
 startQuestions();
